@@ -4,4 +4,4 @@
 
 1. Calculations of the inductances and attenuation constant for a thin film CPW resonator, following the derivations of <https://aip.scitation.org/doi/10.1063/1.4773070> "Clem, Journal of Applied Physics 113, 013910 (2013)"
 
-<a href="testlink">http://example.com/</a>
+<a href="http://www.google.com/">example/</a>
