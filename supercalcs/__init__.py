@@ -1,3 +1,2 @@
-from .physicalproperties import Physicalproperties
-from .emproperties import EMProperties
-from .inductance import Inductance
+from supercalcs.cpw_calcs import *
+from supercalcs.mattis-bardeen import *
