@@ -1,0 +1,15 @@
+README.md
+setup.py
+Plot Notebooks/__init__.py
+Plot Notebooks/emproperties.py
+Plot Notebooks/inductance.py
+Plot Notebooks/physicalproperties.py
+supercalcs/__init__.py
+supercalcs/emproperties.py
+supercalcs/inductance.py
+supercalcs/physicalproperties.py
+supercalcs.egg-info/PKG-INFO
+supercalcs.egg-info/SOURCES.txt
+supercalcs.egg-info/dependency_links.txt
+supercalcs.egg-info/requires.txt
+supercalcs.egg-info/top_level.txt

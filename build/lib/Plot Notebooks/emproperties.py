@@ -27,9 +27,9 @@ class EMProperties(PhysicalProperties):
         Kzx = []
         for x in xlist:
             #Phi = ((sc.mu_0 *A)/em.b) * ellipk(em.kp)
-            Az0 = (-self.flux_per_length/np.pi) * ( np.arctan((x-self.a)/abs(y)) - np.arctan((x+self.a)/abs(y)) )
+            Az0 = (-self.flux_per_length()/np.pi) * ( np.arctan((x-self.a)/abs(y)) - np.arctan((x+self.a)/abs(y)) )
             if abs(x)<=0:
-                Kzx.append((2/sc.mu_0*self.pearl_length) * (self.flux_per_length-Az0))
+                Kzx.append((2/sc.mu_0*self.pearl_length) * (self.flux_per_length()-Az0))
             if abs(x)>0: 
                 Kzx.append((-2/sc.mu_0*self.pearl_length) * Az0)
         return Kzx

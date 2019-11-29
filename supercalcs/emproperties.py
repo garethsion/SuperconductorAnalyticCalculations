@@ -23,6 +23,17 @@ class EMProperties(PhysicalProperties):
         Kz = list(np.concatenate((np.concatenate((klhs,Kz)),krhs)))
         return Kz
 
+    def current_density_two_slits(self,xlist,y=0,A=1):
+        Kzx = []
+        for x in xlist:
+            #Phi = ((sc.mu_0 *A)/em.b) * ellipk(em.kp)
+            Az0 = (-self.flux_per_length/np.pi) * ( np.arctan((x-self.a)/abs(y)) - np.arctan((x+self.a)/abs(y)) )
+            if abs(x)<=0:
+                Kzx.append((2/sc.mu_0*self.pearl_length) * (self.flux_per_length-Az0))
+            if abs(x)>0: 
+                Kzx.append((-2/sc.mu_0*self.pearl_length) * Az0)
+        return Kzx
+    
     def complex_field(self,xlist,A=1):
         Hy = []
 
